@@ -28,10 +28,49 @@ function addTwoNumber01(number1,number2){
 
 function employee(username){
     if(!username){
-        console.log("Please Enter a Username");
+        // console.log("Please Enter a Username");
         return
     }
-    return `${username} just logged in`
+    // return `${username} just logged in`
 }
 
 console.log(employee("Saini"));
+
+function calculatePrice(...num1){     // rest operator
+    return num1 
+}
+
+// console.log(calculatePrice(2,3,4,5))
+
+
+const user = {
+    username : "Saini",
+    price : 9292
+}
+
+function handleObject(anyobject){
+    // console.log(`Username : ${anyobject.username}&\n Price: ${anyobject.price}`)
+}
+
+handleObject(user)
+
+
+handling({
+    greet : "hello",
+    pricing : 200
+})
+
+function handling(obj){
+    // console.log(obj.greet);
+}
+
+
+
+const newArray = [200,600,900]
+
+function fetchArray(getarray){
+    return getarray[2]
+}
+
+console.log(fetchArray(newArray));
+
